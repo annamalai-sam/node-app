@@ -25,8 +25,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="./../css/style.css" />
-    <style>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="./../js/minDAte.js"></script>
+    <!-- <style>
       .parent-container-max-width {
         margin: auto;
         max-width: 100%;
@@ -66,7 +67,7 @@
         border-right: 1px solid #dee2e6;
         box-shadow: -60px 0px 50px -90px #696565, 60px 0px 50px -90px #696565;
       }
-    </style>
+    </style> -->
   </head>
   <body>
     <section class="container-xl fixed-top">
@@ -182,6 +183,8 @@
         <% } else { %> <% for (i = 0; i < data.length; i++) { %>
         <div class="mt-2">
           <div class="row">
+
+
             <div class="col-10 ms-auto me-auto">
               <% if (data[i].status == "incomplete" ) { %>
               <a class="btn btn-outline-primary" href="/mark/<%=data[i].id%>">
@@ -191,12 +194,16 @@
               <p class="text-success"><%= data[i].status %>d</p>
               <% } %>
             </div>
+
             <div class="col-2 ms-auto">
               <a class="btn btn-outline-danger" href="/del/<%=data[i].id%>">
                 <i class="fa fa-trash" aria-hidden="true"></i>
               </a>
             </div>
+            
           </div>
+
+
           <div class="row mt-2">
             <div class="col-10 ms-auto me-auto">
               <h4><%= data[i].task %></h4>

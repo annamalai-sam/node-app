@@ -1,0 +1,40 @@
+.parent-container-max-width {
+    margin: auto;
+    max-width: 100%;
+}
+
+@media (min-width: 576px) {
+    .parent-container-max-width {
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 768px) {
+    .parent-container-max-width {
+        max-width: 620px;
+    }
+}
+
+@media (min-width: 992px) {
+    .parent-container-max-width {
+        max-width: 760px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .parent-container-max-width {
+        max-width: 760px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .parent-container-max-width {
+        max-width: 760px;
+    }
+}
+
+.parent-container {
+    border-left: 1px solid #dee2e6;
+    border-right: 1px solid #dee2e6;
+    box-shadow: -60px 0px 50px -90px #696565, 60px 0px 50px -90px #696565;
+}
